@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "dc-dc converter-altium-import")(type "KiCad")(uri "${KIPRJMOD}/dc-dc converter-altium-import.kicad_sym")(options "")(descr ""))
+)

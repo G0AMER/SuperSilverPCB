@@ -560,12 +560,102 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB SMD",
+          "name": "JLCPCB SMD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC ASSEMBLY",
+          "name": "LCSC ASSEMBLY",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER PART",
+          "name": "MANUFACTURER PART",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "NAMEALIAS",
+          "name": "NAMEALIAS",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SMT TYPE",
+          "name": "SMT TYPE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SPICEPRE",
+          "name": "SPICEPRE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SPICESYMBOLNAME",
+          "name": "SPICESYMBOLNAME",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SUPPLIER",
+          "name": "SUPPLIER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SUPPLIER PART",
+          "name": "SUPPLIER PART",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TIMESTAMP",
+          "name": "TIMESTAMP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CONTRIBUTOR",
+          "name": "CONTRIBUTOR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },

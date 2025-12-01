@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "VNH5019-altium-import")(type "KiCad")(uri "${KIPRJMOD}/VNH5019-altium-import.kicad_sym")(options "")(descr ""))
+)

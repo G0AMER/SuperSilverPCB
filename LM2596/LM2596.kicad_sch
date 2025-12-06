@@ -1,0 +1,2178 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "491a5b3b-305b-4484-a933-1f6626d07ab9")
+	(paper "User" 91.1098 53.2892)
+	(lib_symbols
+		(symbol "LM2596-altium-import:+5V_BAR"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name '+5V'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_BAR_0_0"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0)
+					(hide yes)
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LM2596-altium-import:GND_POWER_GROUND"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name 'GND'"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_POWER_GROUND_0_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LM2596-altium-import:root_0_330u_"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "root_0_330u__1_0"
+				(rectangle
+					(start -1.829 1.016)
+					(end 1.905 0.558)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 141 35 35 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.829 -0.254)
+					(end 1.905 -0.712)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 141 35 35 1)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.778 2.032)
+					(end -0.762 2.006)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 141 35 35 1)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.27 2.54)
+					(end -1.245 1.524)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 141 35 35 1)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.016)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 141 35 35 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 141 35 35 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LM2596-altium-import:root_0_47uH_"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "root_0_47uH__1_0"
+				(arc
+					(start -4.2881 0.0148)
+					(mid -3.2757 1.1311)
+					(end -2.2662 0.0122)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.1339 0.0145)
+					(mid -1.123 1.132)
+					(end -0.1121 0.0145)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.0181 0.0145)
+					(mid 1.029 1.132)
+					(end 2.0399 0.0145)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.2097 0.0154)
+					(mid 3.2233 1.118)
+					(end 4.2341 0.0128)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 0.762)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 0.762)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LM2596-altium-import:root_0_LM2596S-5.0_"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "root_0_LM2596S-5.0__1_0"
+				(rectangle
+					(start -8.89 7.62)
+					(end 8.89 -7.62)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -8.255 6.985)
+					(radius 0.381)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -11.43 5.08 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 2.54 0)
+					(length 2.54)
+					(name "Output"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 -2.54 0)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 -5.08 0)
+					(length 2.54)
+					(name "ON#/OFF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 0 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LM2596-altium-import:root_1_SS34_"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "root_1_SS34__1_0"
+				(polyline
+					(pts
+						(xy 1.524 2.032) (xy 1.778 2.032) (xy 1.778 2.032) (xy 1.778 1.524) (xy 1.778 1.524) (xy -2.032 1.524)
+						(xy -2.032 1.524) (xy -2.032 1.016) (xy -2.032 1.016) (xy -1.778 1.016)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.27) (xy 0 1.27) (xy 0 1.27) (xy -1.778 -1.27) (xy -1.778 -1.27) (xy 1.524 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 136 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "35V"
+		(exclude_from_sim no)
+		(at 38.659 39.0842 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "458eeafb-55e1-489e-9bde-ca7dab177b9d")
+	)
+	(text "35V"
+		(exclude_from_sim no)
+		(at 14.529 38.9802 0)
+		(effects
+			(font
+				(size 1.143 1.143)
+			)
+			(justify left bottom)
+		)
+		(uuid "ced90518-6453-495f-975b-e67949e91381")
+	)
+	(junction
+		(at 11.989 26.5552)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ced47ee-4e47-4391-8597-7b16df517ea5")
+	)
+	(junction
+		(at 11.989 18.9352)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35eda592-d50c-4bce-ba3d-83be9b7db4a9")
+	)
+	(junction
+		(at 36.119 24.0152)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3db40ebb-8f17-4eab-88ce-d5e15113a3b4")
+	)
+	(junction
+		(at 47.549 34.1752)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "853bb211-35db-4656-94f9-130447d2b27a")
+	)
+	(junction
+		(at 24.689 26.5552)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf3203a6-340f-42e7-9f52-89f4f339a617")
+	)
+	(wire
+		(pts
+			(xy 50.089 24.0152) (xy 36.119 24.0152)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ee853f-c77c-46b6-9891-e6c2b4ea080d")
+	)
+	(wire
+		(pts
+			(xy 50.089 34.1752) (xy 47.549 34.1752)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17d75175-ff42-4cc0-a72d-670f4a9d8424")
+	)
+	(wire
+		(pts
+			(xy 11.989 26.5552) (xy 11.989 18.9352)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d07d77b-de88-47d0-b00e-42007705b877")
+	)
+	(wire
+		(pts
+			(xy 47.549 34.1752) (xy 47.549 29.0952)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d1c589e-f45b-4a57-b949-727e0cc38b0a")
+	)
+	(wire
+		(pts
+			(xy 11.989 18.9352) (xy 45.009 18.9352)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "354dc0e4-5b9e-4e7c-9423-74edeff6cfb9")
+	)
+	(wire
+		(pts
+			(xy 11.989 16.3952) (xy 11.989 18.9352)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "381c7269-211e-43f7-a995-163afac28d10")
+	)
+	(wire
+		(pts
+			(xy 45.009 31.6352) (xy 50.089 31.6352)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4539596d-1697-4d3c-81a4-08c0c8b54ce8")
+	)
+	(wire
+		(pts
+			(xy 24.689 26.5552) (xy 50.089 26.5552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4865e24f-a7f6-4056-9c9b-b62065b74eaa")
+	)
+	(wire
+		(pts
+			(xy 23.419 26.5552) (xy 24.689 26.5552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53092f09-7e18-42b7-92f5-404baeff5552")
+	)
+	(wire
+		(pts
+			(xy 72.949 29.0952) (xy 75.489 29.0952)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "692a7e0a-e487-4811-a905-bea7a3a27619")
+	)
+	(wire
+		(pts
+			(xy 47.549 29.0952) (xy 50.089 29.0952)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d23a740-d2e0-4861-a10d-83f4ddff9a68")
+	)
+	(wire
+		(pts
+			(xy 36.119 16.3952) (xy 36.119 24.0152)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d99ad03-4d6f-49e9-bc64-a8ae590f194c")
+	)
+	(wire
+		(pts
+			(xy 36.119 24.0152) (xy 36.119 27.8252)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85706bb5-9cd2-4bc7-bde0-24d6a811a761")
+	)
+	(wire
+		(pts
+			(xy 24.689 27.8252) (xy 24.689 26.5552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9000f4db-0682-4e5a-b05c-4260cf7f32a1")
+	)
+	(wire
+		(pts
+			(xy 45.009 18.9352) (xy 45.009 31.6352)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94990d3f-12db-4fd8-8595-32f678eb31bb")
+	)
+	(wire
+		(pts
+			(xy 47.549 37.9852) (xy 47.549 34.1752)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99fe39af-54f0-493d-8ee2-1192117c8ada")
+	)
+	(wire
+		(pts
+			(xy 75.489 29.0952) (xy 75.489 37.9852)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0b35ef5-dd7b-4c39-ae91-f62747092455")
+	)
+	(wire
+		(pts
+			(xy 11.989 27.8252) (xy 11.989 26.5552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee0afa68-b718-4e43-baa6-8be649237fbb")
+	)
+	(wire
+		(pts
+			(xy 13.259 26.5552) (xy 11.989 26.5552)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee83b69f-f8a2-48dc-82b7-bb155329ff54")
+	)
+	(hierarchical_label "VIN"
+		(shape input)
+		(at 36.119 16.3952 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "37e242b6-5778-4eb1-98b2-de20ba0a8ff1")
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:GND_POWER_GROUND")
+		(at 75.489 37.9852 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03e8a679-5c51-467a-949f-09f056833b10")
+		(property "Reference" "#PWR?"
+			(at 75.489 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 75.489 44.3352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 75.489 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 75.489 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 75.489 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "1de56cde-11e9-44c7-8058-368046b606ae")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:root_0_47uH_")
+		(at 18.339 26.5552 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "051f5095-6cfb-47a1-9c3f-500a736f5712")
+		(property "Reference" "L1"
+			(at 17.043 23.1052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uH"
+			(at 16.858 25.4232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" "LCSC"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Sumida"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" "CDRH127NP-470MC"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Inductance"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "LCSC"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" "C167265"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "L"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "CDRH127NP-470MC"
+			(at 18.339 26.5552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e24303e9-f5db-4bf2-9562-29ea22f65202")
+		)
+		(pin "2"
+			(uuid "e1294d11-57b1-4378-a4d1-5116f620ff9c")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:root_0_330u_")
+		(at 36.119 32.9052 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e987b73-ff88-43c3-98e9-05153287e2b0")
+		(property "Reference" "C1"
+			(at 38.659 34.4722 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "330u"
+			(at 38.532 36.7582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Value(F)"
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "EasyEDA"
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" "?"
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "C"
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "Cap_Electrolytic(SMD)_D8.0XH10.5_EU"
+			(at 36.119 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ddc61f6-fc79-4097-ab04-851d38d9eab4")
+		)
+		(pin "2"
+			(uuid "329b022d-83f0-4c62-8dc0-77e89eb0a84a")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:GND_POWER_GROUND")
+		(at 47.549 37.9852 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6bb7ab60-1d66-4121-add5-77425eaa5a42")
+		(property "Reference" "#PWR?"
+			(at 47.549 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 47.549 44.3352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 47.549 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 47.549 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 47.549 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "e34cc264-66a4-4481-85d8-cd2a9c05f45e")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:+5V_BAR")
+		(at 11.989 16.3952 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b193db6-5080-4894-9fef-26b05db1b41c")
+		(property "Reference" "#PWR?"
+			(at 11.989 16.3952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 11.989 12.5852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.989 16.3952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 11.989 16.3952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 11.989 16.3952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "2467a149-f622-4822-9837-d21f5da14c4b")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:GND_POWER_GROUND")
+		(at 11.989 37.9852 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2336ba0-5ff3-4ffe-80b9-3503ba632b52")
+		(property "Reference" "#PWR?"
+			(at 11.989 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 11.989 44.3352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.989 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 11.989 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 11.989 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "dfbc17a3-4630-44dd-bac2-da2314189eca")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:root_0_LM2596S-5.0_")
+		(at 61.519 29.0952 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c24d59bb-47c9-4af9-a61c-1e323e9faf23")
+		(property "Reference" "U1"
+			(at 59.939 19.1332 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "LM2596S-5.0"
+			(at 59.939 21.4542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" "LCSC"
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" "C116713"
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" "LM2596S-5.0/NOPB"
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "LCSC"
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "U"
+			(at 61.519 29.0952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b11c7676-1ae1-4c77-b949-74b3bc529b14")
+		)
+		(pin "1"
+			(uuid "e8ca38d2-7b76-45be-980f-6ca7cadc3bb4")
+		)
+		(pin "6"
+			(uuid "b3d6b2b8-2b62-4a65-a5aa-8d94cb703c34")
+		)
+		(pin "4"
+			(uuid "5355c35f-8605-4e01-ab49-fd448106003a")
+		)
+		(pin "5"
+			(uuid "64b9031b-a616-42a8-b779-f96c78242de3")
+		)
+		(pin "3"
+			(uuid "ecf44048-bec5-4663-b5c5-12b72ade83eb")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:root_0_330u_")
+		(at 11.989 32.9052 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c54c0ecf-6cb3-4188-8fab-385d754ba3d2")
+		(property "Reference" "C2"
+			(at 14.529 34.4722 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "330u"
+			(at 14.402 36.7582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Value(F)"
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "EasyEDA"
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" "?"
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "C"
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "Cap_Electrolytic(SMD)_D8.0XH10.5_EU"
+			(at 11.989 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a87641cb-656c-41e1-b865-10ee103d7d72")
+		)
+		(pin "1"
+			(uuid "bca908f1-929f-4066-8b24-738079fbe717")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:root_1_SS34_")
+		(at 24.689 32.9052 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca267110-98f3-4400-9c58-38d784abed5f")
+		(property "Reference" "D1"
+			(at 26.977 34.4622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SS34"
+			(at 26.975 36.7822 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" "LCSC"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Yenji"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" "SS34"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "LCSC"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" "C142458"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC ASSEMBLY" "Yes"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SMT TYPE" "Extend"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "D"
+			(at 24.689 32.9052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19cede23-62f4-4a1e-96cd-792002895b9a")
+		)
+		(pin "2"
+			(uuid "2887712c-f173-440a-9afc-e6a0e0b42c18")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:GND_POWER_GROUND")
+		(at 36.119 37.9852 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9bf9715-0c23-409b-a29d-26171a3e23ab")
+		(property "Reference" "#PWR?"
+			(at 36.119 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 36.119 44.3352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.119 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.119 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 36.119 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "098cf050-07e3-41f4-bac8-0c85fcb16b3e")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LM2596-altium-import:GND_POWER_GROUND")
+		(at 24.689 37.9852 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6d1bf03-5167-4f9b-a433-46453d99b505")
+		(property "Reference" "#PWR?"
+			(at 24.689 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 24.689 44.3352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.689 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.689 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 24.689 37.9852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin ""
+			(uuid "8ac87718-3f24-468e-a509-a89ad02bac72")
+		)
+		(instances
+			(project ""
+				(path "/491a5b3b-305b-4484-a933-1f6626d07ab9"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "#")
+		)
+	)
+	(embedded_fonts no)
+)

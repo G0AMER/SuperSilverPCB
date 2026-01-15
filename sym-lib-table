@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "SILVER-altium-import")(type "KiCad")(uri "${KIPRJMOD}/SILVER-altium-import.kicad_sym")(options "")(descr ""))
+)

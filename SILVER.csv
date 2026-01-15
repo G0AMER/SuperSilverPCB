@@ -1,0 +1,18 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"J16,J15,J14";"TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm";3;"Screw_Terminal_01x02";;;
+2;"J4";"PinHeader_1x06_P2.54mm_Vertical";1;"MotorL";;;
+3;"L2";"L_12x12mm_H6mm";1;"47uH";;;
+4;"J13,J12";"PinHeader_1x03_P2.54mm_Vertical";2;"Conn_01x03_Pin";;;
+5;"U4";"TO-263-5_TabPin3";1;"LM2596S-5.0";;;
+6;"D7";"D_SMA";1;"SS34";;;
+7;"C19,C18";"CP_Elec_8x10.5";2;"330u";;;
+8;"J2";"PinSocket_1x04_P2.54mm_Vertical";1;"UltraLeft";;;
+9;"J5";"PinHeader_1x06_P2.54mm_Vertical";1;"MotorR";;;
+10;"J6";"AMASS_XT60-M_1x02_P7.20mm_Vertical";1;"XT60-M";;;
+11;"SW1";"KCD11-101";1;"SW_DIP_x01";;;
+12;"J7";"STLINK";1;"STLINK";;;
+13;"J3";"PinSocket_1x08_P2.54mm_Vertical";1;"MPU6050";;;
+14;"J11";"PinSocket_1x04_P2.54mm_Vertical";1;"UltraRight";;;
+15;"J9,J10";"PinSocket_2x22_P2.54mm_Vertical";2;"Conn_02x22_Odd_Even_MountingPin";;;
+16;"J1";"Hirose_FH12-13S-0.5SH_1x13-1MP_P0.50mm_Horizontal";1;"Conn_01x13";;;
+17;"J8";"PinSocket_1x04_P2.54mm_Vertical";1;"Conn_01x04_Pin";;;

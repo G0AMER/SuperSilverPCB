@@ -3,24 +3,26 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "8a56a7da-a0a5-4318-a251-bfbd036d0ddd")
-	(paper "User" 137.668 119.253)
+	(paper "A")
 	(lib_symbols
-		(symbol "VNH5019-altium-import:+5V_BAR"
-			(power)
+		(symbol "Connector:Conn_01x03_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 0 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Value" "+5V"
-				(at 0 -3.81 0)
+			(property "Value" "Conn_01x03_Socket"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -36,7 +38,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -45,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name '+5V'"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,7 +56,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -63,14 +73,23 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_BAR_0_0"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Socket_1_1"
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy 1.27 -2.54)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
-						(width 0.254)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -78,28 +97,111 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -2.54)
+						(xy -1.27 0) (xy -0.508 0)
 					)
 					(stroke
-						(width 0.254)
-						(type solid)
+						(width 0.1524)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(pin power_in line
-					(at 0 0 0)
-					(length 0)
-					(hide yes)
-					(name "+5V"
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -110,22 +212,24 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "VNH5019-altium-import:GND_POWER_GROUND"
-			(power)
+		(symbol "Connector:Conn_01x04_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 0 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Value" "GND"
-				(at 0 -6.35 0)
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -141,7 +245,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -150,7 +254,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name 'GND'"
+			(property "Description" "Generic connector, single row, 01x04, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -159,7 +263,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -168,79 +280,177 @@
 					(hide yes)
 				)
 			)
-			(symbol "GND_POWER_GROUND_0_0"
-				(polyline
-					(pts
-						(xy -2.54 -2.54) (xy 2.54 -2.54)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -3.302) (xy 1.778 -3.302)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 -4.064) (xy 1.016 -4.064)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 -4.826) (xy 0.254 -4.826)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 0 0)
-					(length 0)
 					(hide yes)
-					(name "GND"
+				)
+			)
+			(symbol "Conn_01x04_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -925,424 +1135,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "VNH5019-altium-import:root_0_HAD-04H-R_"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_0_HAD-04H-R__1_0"
-				(rectangle
-					(start -6.35 5.08)
-					(end 6.35 -5.08)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy -3.81 5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy -3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -4.826 0.254)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -5.08) (xy -3.81 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -2.286 0.254)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.254 0.254)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 2.54) (xy 3.81 5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 2.54) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -2.54) (xy 2.794 0.254)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -5.08) (xy 3.81 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -3.81 7.62 270)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 -7.62 90)
-					(length 2.54)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -1.27 7.62 270)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -1.27 -7.62 90)
-					(length 2.54)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 1.27 7.62 270)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 1.27 -7.62 90)
-					(length 2.54)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 7.62 270)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 -7.62 90)
-					(length 2.54)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2216,190 +2008,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "VNH5019-altium-import:root_1_4.7k_"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "root_1_4.7k__1_0"
-				(polyline
-					(pts
-						(xy -1.27 1.778) (xy 1.27 0.508)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -0.508) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -3.048) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 1.27 3.048)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.048) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.508) (xy -1.27 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy -1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 160 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "VNH5019-altium-import:root_1_FCD600N60Z_"
 			(pin_numbers
 				(hide yes)
@@ -2410,23 +2018,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
+			(property "Reference" "Q2"
+				(at -1.016 5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "FCD600N60Z"
+				(at -6.096 3.302 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2450,6 +2060,96 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
+				)
+			)
+			(property "SUPPLIER" "LCSC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "SUPPLIER PART" "C352876"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "ON Semicon"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER PART" "FCD600N60Z"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "CONTRIBUTOR" "LCSC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "SMT TYPE" "Extend"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB SMD" "Yes"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "SPICEPRE" "Q"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "SPICESYMBOLNAME" "FCD600N60Z"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
 					(hide yes)
 				)
 			)
@@ -2686,7 +2386,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2879,1056 +2579,1589 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 35.56 65.786)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "014bd7c8-6210-4be8-8350-a5f5424cce81")
+	(text "Motor Driver Left"
+		(exclude_from_sim no)
+		(at 37.338 117.856 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4804ea3d-07fd-4a52-a896-2a5ccc5fddd9")
 	)
 	(junction
-		(at 48.26 72.136)
+		(at 64.77 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "17834577-baee-4826-8d93-5283661d2eab")
+		(uuid "0de57231-dfdb-4f6d-b90e-8fb59c43c373")
 	)
 	(junction
-		(at 88.9 26.416)
+		(at 110.49 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1a273b16-fe86-4346-bd7f-e12f77f88e10")
+		(uuid "1a33f1b1-a2ee-4e62-b96e-eef0ad64ee19")
 	)
 	(junction
-		(at 93.98 77.216)
+		(at 102.87 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "21413618-f5b0-4043-8e5c-5b9ea5743339")
+		(uuid "382c001f-75d8-44c2-a97a-843503c33446")
 	)
 	(junction
-		(at 63.5 36.576)
+		(at 105.41 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3bdc2c8d-b000-45e5-aaa6-3d9920bf09ce")
+		(uuid "3b25a3aa-993a-4aa3-b425-e4c448b93dd0")
 	)
 	(junction
-		(at 66.04 51.816)
+		(at 110.49 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3da18f3a-100b-48fb-979a-5aa5f1abb531")
+		(uuid "3e6d5ef0-a056-4bbe-9db5-1c3d86c17b72")
 	)
 	(junction
-		(at 111.76 30.226)
+		(at 100.33 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3f7cf343-7812-416f-9f5e-0c590deb25c9")
+		(uuid "48244dc4-9310-4ffe-8fba-e62c35920f5b")
 	)
 	(junction
-		(at 101.6 26.416)
+		(at 134.62 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "64fa473a-ca62-4b4c-b33a-b99fb10608ca")
+		(uuid "65b3febc-6646-4a71-b64c-7a5dd578308f")
 	)
 	(junction
-		(at 81.28 36.576)
+		(at 134.62 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6713f3cd-b23b-4534-8a53-ab0cb6a74b8a")
+		(uuid "6efa20a6-eec0-4e21-8ed8-d5166f94db75")
 	)
 	(junction
-		(at 48.26 89.916)
+		(at 105.41 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6a54f23e-004a-47dc-8d7e-5a5f036ed1f3")
+		(uuid "7b2d3e5e-c81a-4c56-8752-e7f757ec0db6")
 	)
 	(junction
-		(at 83.82 83.566)
+		(at 71.12 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "79ec4f4b-4a4a-4119-ab79-8377b1557f2f")
+		(uuid "7d0e104f-61ef-4927-af81-d0244a2fd469")
 	)
 	(junction
-		(at 96.52 26.416)
+		(at 118.11 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7c3b3927-3cdb-49a8-9d8d-44ac748945a6")
+		(uuid "8b8ad773-f284-4182-817e-547533fb822f")
 	)
 	(junction
-		(at 86.36 83.566)
+		(at 128.27 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7fe02abc-49d4-4065-8679-7de1e12a79ee")
+		(uuid "92349c6e-8d1c-4149-9255-41166253411b")
 	)
 	(junction
-		(at 88.9 83.566)
+		(at 91.44 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9628ff9d-151d-4bf7-b46b-8632eebf53e5")
+		(uuid "9c16a94c-e7eb-47d4-b128-dfb01ee4d37c")
 	)
 	(junction
-		(at 54.61 72.136)
+		(at 52.07 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a546e5f6-60e8-4c3b-a8d7-6cdf962b0983")
+		(uuid "a530cf8b-6131-41d4-b5b7-edb44aac87d1")
 	)
 	(junction
-		(at 58.42 59.436)
+		(at 110.49 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "aa85b737-51f6-434f-ab85-b7977fb53657")
+		(uuid "b6c6a52c-11c8-443c-9252-3a0edfe1360f")
 	)
 	(junction
-		(at 93.98 83.566)
+		(at 64.77 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ad07b1bb-468e-4f58-9e06-595f4a660450")
+		(uuid "bfd88bba-2c34-4ffc-aad2-ddb0cc4d83a7")
 	)
 	(junction
-		(at 93.98 26.416)
+		(at 113.03 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c25839a6-137a-40a0-b598-36b356a54f42")
+		(uuid "c2c98a91-36d4-4c4a-b618-77784e0a6a3b")
 	)
 	(junction
-		(at 91.44 26.416)
+		(at 107.95 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d0b01a2d-f796-460d-bfd3-45ab2b8bbfd2")
+		(uuid "d6af0e50-3f38-4530-aa18-6e4e515b1466")
 	)
 	(junction
-		(at 91.44 83.566)
+		(at 107.95 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "efa84767-bfe8-4ecd-96f3-979527642f79")
+		(uuid "dcea39b8-6f56-427e-ad10-b5a2d4eb5908")
 	)
 	(wire
 		(pts
-			(xy 12.7 49.276) (xy 12.7 31.496)
+			(xy 128.27 36.83) (xy 128.27 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "00387eff-9e3f-4991-9aac-3505d01ac0b8")
+		(uuid "000b594d-1532-4818-836a-ffda603cc587")
 	)
 	(wire
 		(pts
-			(xy 91.44 26.416) (xy 88.9 26.416)
+			(xy 134.62 71.12) (xy 134.62 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "00e24aeb-57c1-4e8c-8a93-7df8f1663756")
+		(uuid "054ef1ab-b9e8-4007-a247-76cde5b8e61d")
 	)
 	(wire
 		(pts
-			(xy 66.04 51.816) (xy 57.15 51.816)
+			(xy 105.41 31.75) (xy 105.41 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "048d4d60-f370-4bbc-8e1d-0268b0b22fe7")
+		(uuid "0647a726-3794-4778-8403-fddb7cee5fe2")
 	)
 	(wire
 		(pts
-			(xy 101.6 26.416) (xy 96.52 26.416)
+			(xy 110.49 93.98) (xy 113.03 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b6e55d5-1f72-4840-82a9-2a48adbedf09")
+		(uuid "06687973-7c05-473b-9570-a63b970b4795")
 	)
 	(wire
 		(pts
-			(xy 68.58 65.786) (xy 58.42 65.786)
+			(xy 110.49 93.98) (xy 110.49 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0da8c117-9100-4cb0-bc56-264ab6c41c4e")
+		(uuid "08bb655d-339f-48e2-8088-5e7d5f8adc83")
 	)
 	(wire
 		(pts
-			(xy 86.36 44.196) (xy 86.36 39.116)
+			(xy 107.95 87.63) (xy 107.95 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0fd3b216-84c6-4baa-ad44-ffbe5c734c74")
+		(uuid "0c4be51b-b27d-449b-a672-922414f36054")
 	)
 	(wire
 		(pts
-			(xy 88.9 83.566) (xy 91.44 83.566)
+			(xy 134.62 76.2) (xy 125.73 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "119c100e-c32e-4cbf-a49e-44da52bbe761")
+		(uuid "0c73a4ba-f179-441a-8c28-6f170f6d8c91")
 	)
 	(wire
 		(pts
-			(xy 48.26 72.136) (xy 54.61 72.136)
+			(xy 91.44 35.56) (xy 91.44 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "16b38710-13be-4cd7-b499-f8a824132d07")
+		(uuid "10d79357-d66a-4025-a72d-713733725bc4")
 	)
 	(wire
 		(pts
-			(xy 109.22 63.246) (xy 119.38 63.246)
+			(xy 55.88 100.33) (xy 55.88 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1a33f88b-db52-4603-a8b7-0f3199b1aca0")
+		(uuid "136ce007-f815-48dc-9b20-3616ba132771")
 	)
 	(wire
 		(pts
-			(xy 86.36 77.216) (xy 86.36 83.566)
+			(xy 97.79 87.63) (xy 97.79 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b259737-9c3e-42d1-8803-0cf6eea39b7a")
+		(uuid "22cb1c16-e45d-4b49-a082-15b0b19122a4")
 	)
 	(wire
 		(pts
-			(xy 81.28 83.566) (xy 83.82 83.566)
+			(xy 34.29 76.2) (xy 52.07 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2080be11-c1a1-4039-b6b3-3e252049fad2")
+		(uuid "2317729b-deb2-4caf-8dde-d559bd830f11")
 	)
 	(wire
 		(pts
-			(xy 96.52 44.196) (xy 96.52 26.416)
+			(xy 107.95 36.83) (xy 107.95 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "276facb7-d305-4ebc-9d30-743af3c2bb47")
+		(uuid "29a2c6fd-411b-42fe-bfa4-d547fc42c1a8")
 	)
 	(wire
 		(pts
-			(xy 83.82 83.566) (xy 86.36 83.566)
+			(xy 64.77 96.52) (xy 64.77 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2907e194-59a5-4ba2-acef-6cf683de2b8b")
+		(uuid "29df2813-31bb-4df4-bca9-9be1b790aeca")
 	)
 	(wire
 		(pts
-			(xy 66.04 46.736) (xy 66.04 51.816)
+			(xy 85.09 67.31) (xy 62.23 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2cd34e89-55c3-409a-a14e-78b319bdaf44")
+		(uuid "2b4ff786-2129-4035-bae1-f5e74b1d6e05")
 	)
 	(wire
 		(pts
-			(xy 17.78 31.496) (xy 17.78 65.786)
+			(xy 102.87 87.63) (xy 102.87 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "373be3ef-b339-4727-81a8-72f49b313937")
+		(uuid "366bc60a-2943-454a-866e-cabcf7d4afa9")
 	)
 	(wire
 		(pts
-			(xy 39.37 89.916) (xy 39.37 81.026)
+			(xy 71.12 95.25) (xy 71.12 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3814569b-a94c-4d19-a4b6-b0b4b99d6e69")
+		(uuid "369784d5-09dd-481d-84d6-f3b334392f60")
 	)
 	(wire
 		(pts
-			(xy 41.91 72.136) (xy 48.26 72.136)
+			(xy 134.62 82.55) (xy 134.62 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "388606e4-b189-4579-96be-2c1020501e64")
+		(uuid "3c685bf0-8384-4701-bb78-bcf6399a152a")
 	)
 	(wire
 		(pts
-			(xy 109.22 51.816) (xy 119.38 51.816)
+			(xy 85.09 62.23) (xy 82.55 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c726a14-0932-46d5-bf8e-b7cc281b750f")
+		(uuid "3e2d654d-171c-41ba-bd8e-ec4b913f715a")
 	)
 	(wire
 		(pts
-			(xy 41.91 63.246) (xy 41.91 72.136)
+			(xy 102.87 93.98) (xy 105.41 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3f3affec-2d73-4619-aa68-83cbd3d706f3")
+		(uuid "3f14f8cb-1772-4140-b9f8-ee5422072126")
 	)
 	(wire
 		(pts
-			(xy 96.52 83.566) (xy 96.52 77.216)
+			(xy 105.41 101.6) (xy 105.41 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42721bc7-84f7-44d7-bd6d-a19a9e7272cb")
+		(uuid "3f461f3b-e8b8-4e6e-b777-3878b74b6b04")
 	)
 	(wire
 		(pts
-			(xy 58.42 59.436) (xy 57.15 59.436)
+			(xy 118.11 43.18) (xy 118.11 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "458ff124-3da3-49be-81a6-039c38a05534")
+		(uuid "44e0ec3a-a642-4083-95ca-389836a0a3d0")
 	)
 	(wire
 		(pts
-			(xy 115.57 30.226) (xy 111.76 30.226)
+			(xy 102.87 49.53) (xy 91.44 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "467d7eaf-0b99-4026-8e0c-0f7c2d2b209c")
+		(uuid "4d459b7e-2c29-4b6f-874d-bc02ab2f9cac")
 	)
 	(wire
 		(pts
-			(xy 35.56 49.276) (xy 12.7 49.276)
+			(xy 52.07 76.2) (xy 64.77 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4af15892-58e8-4d39-b993-9be58f2456ac")
+		(uuid "50da4054-7c82-49d6-9548-ff910fe6eeb0")
 	)
 	(wire
 		(pts
-			(xy 35.56 56.896) (xy 15.24 56.896)
+			(xy 64.77 100.33) (xy 55.88 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4ce4f6ad-66a6-4e4f-9a00-97d917224f6e")
+		(uuid "530d5df1-0d9c-4f6d-8008-44f647fed76c")
 	)
 	(wire
 		(pts
-			(xy 109.22 72.136) (xy 118.11 72.136)
+			(xy 52.07 81.28) (xy 52.07 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d68975b-cc49-4052-8cb8-04394ee6d968")
+		(uuid "543ebc84-1e67-4ef1-8573-dccd96de822b")
 	)
 	(wire
 		(pts
-			(xy 111.76 30.226) (xy 111.76 32.766)
+			(xy 55.88 81.28) (xy 52.07 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4fc364af-bd4d-47d8-a64f-aa693642b134")
+		(uuid "59d8ba7d-7c46-4681-871d-6cb4da117093")
 	)
 	(wire
 		(pts
-			(xy 96.52 26.416) (xy 93.98 26.416)
+			(xy 110.49 54.61) (xy 110.49 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53dbf3df-af37-4846-940c-5039056a6160")
+		(uuid "5a97b758-d357-4b43-b689-89b3e84d1704")
 	)
 	(wire
 		(pts
-			(xy 88.9 91.186) (xy 88.9 83.566)
+			(xy 62.23 59.69) (xy 85.09 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "546237e6-95b2-402c-8a7f-c909b3f2fed9")
+		(uuid "5f5bb908-0ef3-49e1-adef-103a23f5361a")
 	)
 	(wire
 		(pts
-			(xy 91.44 44.196) (xy 91.44 26.416)
+			(xy 58.42 73.66) (xy 58.42 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "560db667-37fa-4455-9c55-7876ab11ea35")
+		(uuid "5fc98c07-6b16-4784-a98c-38137f21e9cf")
 	)
 	(wire
 		(pts
-			(xy 54.61 89.916) (xy 48.26 89.916)
+			(xy 74.93 46.99) (xy 82.55 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "57da353f-2a95-4b23-a6fd-63e7e32e2089")
+		(uuid "62b2de28-a663-4e74-bc08-96bb08181bac")
 	)
 	(wire
 		(pts
-			(xy 88.9 26.416) (xy 86.36 26.416)
+			(xy 143.51 38.1) (xy 143.51 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "584cf669-b6ec-4318-8a09-ac4d52e2e00f")
+		(uuid "68ddc993-0a08-4e66-86e3-e1f347f8da4c")
 	)
 	(wire
 		(pts
-			(xy 118.11 65.786) (xy 109.22 65.786)
+			(xy 110.49 87.63) (xy 110.49 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58831fc7-022b-4dc0-82a0-dbdde39b13d1")
+		(uuid "69e28869-88a6-4497-a257-238577df9685")
 	)
 	(wire
 		(pts
-			(xy 118.11 54.356) (xy 109.22 54.356)
+			(xy 134.62 73.66) (xy 134.62 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "633fc9f6-5bc3-44e4-be5f-a8db2fd78058")
+		(uuid "6aa9b7d5-2241-422c-ba2c-f1b48f687784")
 	)
 	(wire
 		(pts
-			(xy 101.6 32.766) (xy 101.6 26.416)
+			(xy 92.71 36.83) (xy 92.71 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6590e6ba-56c4-441d-9795-15339b444a1b")
+		(uuid "6c454be2-82b4-48f3-b637-b2b0ac53b15b")
 	)
 	(wire
 		(pts
-			(xy 81.28 36.576) (xy 81.28 31.496)
+			(xy 110.49 36.83) (xy 107.95 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "659c584c-9cd2-4be5-8204-050b40c74777")
+		(uuid "6cd4bb8f-297b-403e-8c9e-476c60d12605")
 	)
 	(wire
 		(pts
-			(xy 86.36 39.116) (xy 74.93 39.116)
+			(xy 100.33 93.98) (xy 102.87 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6988ed63-4189-46a8-9861-91172a8540ab")
+		(uuid "6ced89f7-9e41-4297-a6c4-1d47f70da7eb")
 	)
 	(wire
 		(pts
-			(xy 48.26 75.946) (xy 48.26 72.136)
+			(xy 113.03 93.98) (xy 113.03 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78a57210-1ab1-41a8-9bff-cac10c0192c8")
+		(uuid "6fc2a76b-5af9-433f-8de7-257b726fb805")
 	)
 	(wire
 		(pts
-			(xy 81.28 44.196) (xy 81.28 36.576)
+			(xy 100.33 87.63) (xy 100.33 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ec1916f-4d5f-4def-8af3-67365dab7a9d")
+		(uuid "6fe7e75b-1bad-438d-85e9-135fcfe6cb5e")
 	)
 	(wire
 		(pts
-			(xy 86.36 83.566) (xy 88.9 83.566)
+			(xy 107.95 93.98) (xy 110.49 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82a75159-a885-4b34-95de-75233e3460e7")
+		(uuid "7033b53c-9e06-41ff-a805-7170c0df668b")
 	)
 	(wire
 		(pts
-			(xy 111.76 26.416) (xy 111.76 30.226)
+			(xy 134.62 73.66) (xy 135.89 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8565457f-46c8-44df-b0db-2861a86ceea6")
+		(uuid "73d8d08a-f492-4104-a5f3-ba36e06e07d2")
 	)
 	(wire
 		(pts
-			(xy 91.44 77.216) (xy 91.44 83.566)
+			(xy 134.62 64.77) (xy 125.73 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "85ea4935-8593-45b5-bbff-63220aedef20")
+		(uuid "74055fbc-63ee-4a96-87be-75ccb1823e1d")
 	)
 	(wire
 		(pts
-			(xy 35.56 65.786) (xy 48.26 65.786)
+			(xy 71.12 100.33) (xy 64.77 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "889cf13b-f508-4079-b826-f40b308adb4c")
+		(uuid "7414b369-988a-4919-9975-954c6b6193e9")
 	)
 	(wire
 		(pts
-			(xy 48.26 86.106) (xy 48.26 89.916)
+			(xy 125.73 73.66) (xy 134.62 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a9723c1-d63c-438a-ae6f-e3a4b2321868")
+		(uuid "77b69434-6bf3-4a89-9d17-3a739f6aeb6d")
 	)
 	(wire
 		(pts
-			(xy 93.98 77.216) (xy 93.98 75.946)
+			(xy 134.62 62.23) (xy 135.89 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8c8eb51a-1b13-40dd-a077-19bb00c9a4c0")
+		(uuid "7af58dbd-2523-4a9f-97ab-020221a6e0fa")
 	)
 	(wire
 		(pts
-			(xy 35.56 70.866) (xy 35.56 65.786)
+			(xy 52.07 67.31) (xy 31.75 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "937ce54f-3189-4c97-8fde-fc05deb45fc6")
+		(uuid "7c597b0e-c5d5-4cab-8682-5ad264c3eb3f")
 	)
 	(wire
 		(pts
-			(xy 58.42 46.736) (xy 58.42 59.436)
+			(xy 86.36 35.56) (xy 91.44 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "93b26b60-8713-457f-8111-ce27ae346558")
+		(uuid "7ec918a3-7ea8-4a0c-bfd0-34eb9134b631")
 	)
 	(wire
 		(pts
-			(xy 74.93 23.876) (xy 76.2 23.876)
+			(xy 29.21 59.69) (xy 29.21 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96a3d258-324a-4aac-82fb-677fe20379bf")
+		(uuid "80269022-9807-4e1e-a6a3-145ea8134468")
 	)
 	(wire
 		(pts
-			(xy 118.11 49.276) (xy 118.11 54.356)
+			(xy 71.12 82.55) (xy 71.12 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99cf77bb-048d-4bb9-b0ba-781834a6d790")
+		(uuid "85c5c2f5-48e5-4c75-810c-743f1c09488c")
 	)
 	(wire
 		(pts
-			(xy 109.22 60.706) (xy 118.11 60.706)
+			(xy 52.07 59.69) (xy 29.21 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9e17579d-7065-4719-aa1c-4a1adbafc492")
+		(uuid "8724b1de-e0e5-40fe-b9b8-82ba1abce19a")
 	)
 	(wire
 		(pts
-			(xy 17.78 65.786) (xy 35.56 65.786)
+			(xy 134.62 62.23) (xy 134.62 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0648ec1-f334-4e18-8226-e996cb14a9e2")
+		(uuid "8a103cb2-253b-4878-a612-2f2e61e92048")
 	)
 	(wire
 		(pts
-			(xy 66.04 36.576) (xy 63.5 36.576)
+			(xy 34.29 41.91) (xy 34.29 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1ae6837-0315-4e11-8db1-96b1d4de310e")
+		(uuid "8d4da1ec-171d-4603-84d3-35da823158af")
 	)
 	(wire
 		(pts
-			(xy 54.61 72.136) (xy 54.61 74.676)
+			(xy 64.77 82.55) (xy 71.12 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6e51191-4151-4f5f-9047-5ca613d40a79")
+		(uuid "91935bef-6fc5-4ebb-95e4-8b7c30b2f679")
 	)
 	(wire
 		(pts
-			(xy 83.82 77.216) (xy 83.82 83.566)
+			(xy 92.71 35.56) (xy 91.44 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa295401-9f4e-42ec-b570-730aefc965f7")
+		(uuid "91e13cb0-c053-495f-a83b-273fb256f228")
 	)
 	(wire
 		(pts
-			(xy 93.98 26.416) (xy 91.44 26.416)
+			(xy 97.79 54.61) (xy 97.79 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac910fcd-c791-42a3-9c00-825db1bb38fd")
+		(uuid "9403ccb4-f6e9-48ac-9bb5-b1a41721b1de")
 	)
 	(wire
 		(pts
-			(xy 118.11 108.966) (xy 64.77 108.966)
+			(xy 81.28 119.38) (xy 81.28 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af8195c1-73cc-476b-9d62-451d903e9ce9")
+		(uuid "9816f33c-971c-4ba8-9e31-51dac9e9421c")
 	)
 	(wire
 		(pts
-			(xy 54.61 84.836) (xy 54.61 89.916)
+			(xy 52.07 73.66) (xy 58.42 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b03c3e58-f0f5-4110-81bb-3c55b8087611")
+		(uuid "98c49e79-ff44-4e35-a37d-089440f7a7a7")
 	)
 	(wire
 		(pts
-			(xy 39.37 70.866) (xy 35.56 70.866)
+			(xy 58.42 82.55) (xy 64.77 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6da1db4-5b6e-464b-8957-c0a8dabb1b8c")
+		(uuid "9d46dd6c-b313-49f7-a2b6-6437030e64d2")
 	)
 	(wire
 		(pts
-			(xy 118.11 72.136) (xy 118.11 108.966)
+			(xy 105.41 93.98) (xy 107.95 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bcbb9257-0eeb-4dc9-9f91-61e9adb333dd")
+		(uuid "a046b1a0-90e6-486f-8a96-c1f913fd2a2d")
 	)
 	(wire
 		(pts
-			(xy 68.58 51.816) (xy 66.04 51.816)
+			(xy 91.44 30.48) (xy 91.44 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bd1949e9-7c8e-40ba-a7cb-97801541bcf1")
+		(uuid "a3c2e1b8-76f0-4938-98b0-5dd73edad243")
 	)
 	(wire
 		(pts
-			(xy 74.93 23.876) (xy 74.93 39.116)
+			(xy 134.62 119.38) (xy 81.28 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf32c817-b791-4275-ac34-d5372f8fef8d")
+		(uuid "a42dcf83-81f0-457e-88c2-7dea772ab288")
 	)
 	(wire
 		(pts
-			(xy 69.85 25.146) (xy 74.93 25.146)
+			(xy 113.03 36.83) (xy 110.49 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c1559b97-197a-4887-b7e0-7db3b5ab99af")
+		(uuid "a9fa882f-6420-49ec-bec2-540215d05cb9")
 	)
 	(wire
 		(pts
-			(xy 109.22 26.416) (xy 111.76 26.416)
+			(xy 31.75 67.31) (xy 31.75 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d25c6975-cf21-43b1-849d-769a5f0cee5c")
+		(uuid "aae25ce0-0ce5-4422-a445-dbb2615894bc")
 	)
 	(wire
 		(pts
-			(xy 45.72 49.276) (xy 68.58 49.276)
+			(xy 97.79 93.98) (xy 100.33 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d5a54a48-1c16-43bd-bba0-b1f0a16eef57")
+		(uuid "abb7f739-a2f4-4dff-af6b-8952be31bcc7")
 	)
 	(wire
 		(pts
-			(xy 109.22 49.276) (xy 118.11 49.276)
+			(xy 64.77 86.36) (xy 64.77 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d8a971fe-09a5-483f-8854-f5861b984d45")
+		(uuid "abfb6d9d-6b29-42c7-8245-bc42abe05d6b")
 	)
 	(wire
 		(pts
-			(xy 76.2 23.876) (xy 76.2 26.416)
+			(xy 125.73 82.55) (xy 134.62 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d98795bd-d2a9-43b3-8243-19bf79dc50eb")
+		(uuid "b5fccc89-e10b-46a4-8089-d395b56b96d8")
 	)
 	(wire
 		(pts
-			(xy 81.28 77.216) (xy 81.28 83.566)
+			(xy 113.03 54.61) (xy 113.03 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db698364-c052-4f6c-97bd-40a98a83c603")
+		(uuid "b7c55a02-64f3-4ad0-97f8-68e05c31103d")
 	)
 	(wire
 		(pts
-			(xy 93.98 83.566) (xy 96.52 83.566)
+			(xy 132.08 40.64) (xy 128.27 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df2b4ce3-6788-46ee-ac8c-46033bb119dd")
+		(uuid "b83b2200-8856-4c8b-b4d9-189cb4d2c962")
 	)
 	(wire
 		(pts
-			(xy 93.98 44.196) (xy 93.98 26.416)
+			(xy 74.93 46.99) (xy 74.93 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df2b9722-86dd-433e-a426-aa5128a00cbc")
+		(uuid "bb338b8a-ed50-4503-b16d-5cb2502cc0d0")
 	)
 	(wire
 		(pts
-			(xy 64.77 108.966) (xy 64.77 72.136)
+			(xy 85.09 69.85) (xy 74.93 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1a037d3-2430-4044-a946-2ff546996711")
+		(uuid "c4880d84-4088-4db2-bb4f-a7eed3b39e49")
 	)
 	(wire
 		(pts
-			(xy 35.56 63.246) (xy 41.91 63.246)
+			(xy 128.27 40.64) (xy 128.27 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e5cddfd4-9741-4a74-b313-beff526a0d41")
+		(uuid "cd62fa60-6ec8-47c8-9cee-70bce91be308")
 	)
 	(wire
 		(pts
-			(xy 68.58 56.896) (xy 45.72 56.896)
+			(xy 134.62 59.69) (xy 134.62 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e746647e-bb0a-498a-a4ad-3cc4b08f4a83")
+		(uuid "d26b8e5b-6bbb-4bc9-b28b-b41c73c9f576")
 	)
 	(wire
 		(pts
-			(xy 93.98 83.566) (xy 93.98 77.216)
+			(xy 125.73 71.12) (xy 134.62 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eb308a22-c524-484f-ab1e-6f580b4aa77d")
+		(uuid "d5e07c17-7ede-4ec3-aba6-b1cac52fe5a7")
 	)
 	(wire
 		(pts
-			(xy 15.24 56.896) (xy 15.24 31.496)
+			(xy 102.87 54.61) (xy 102.87 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ee7c919b-9345-4350-b677-ca76b7d0860c")
+		(uuid "d886dbc5-e7a4-4fc8-bdbe-e3491e37d955")
 	)
 	(wire
 		(pts
-			(xy 91.44 83.566) (xy 93.98 83.566)
+			(xy 105.41 36.83) (xy 107.95 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "efd12174-8722-4e08-8c7c-16a58c6b2486")
+		(uuid "ded383e9-7dca-494f-8806-0099d127fcf5")
 	)
 	(wire
 		(pts
-			(xy 63.5 36.576) (xy 58.42 36.576)
+			(xy 82.55 46.99) (xy 82.55 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f140b611-793a-4dde-ae36-053c3d84a388")
+		(uuid "e64bf921-20b3-4f6b-98fa-bb79fdf32084")
 	)
 	(wire
 		(pts
-			(xy 118.11 60.706) (xy 118.11 65.786)
+			(xy 125.73 59.69) (xy 134.62 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f92d3b82-7ce1-419c-836c-74820074231c")
+		(uuid "f18f0b45-9555-45a0-beb9-2208d944329f")
 	)
 	(wire
 		(pts
-			(xy 48.26 89.916) (xy 39.37 89.916)
+			(xy 125.73 36.83) (xy 128.27 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc4ec0d8-1b6f-4fd7-84a1-a70dab4f2853")
+		(uuid "f492677f-b468-4331-bee2-ba50e237977b")
 	)
 	(wire
 		(pts
-			(xy 68.58 59.436) (xy 58.42 59.436)
+			(xy 72.39 35.56) (xy 76.2 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fe203f5e-fae2-4962-98de-c665db43e74b")
+		(uuid "f5283d7c-cf69-4a28-87f1-257059e1c548")
 	)
-	(hierarchical_label "D13"
+	(wire
+		(pts
+			(xy 85.09 76.2) (xy 74.93 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f80862c8-482d-4452-ae64-69f33afba359")
+	)
+	(wire
+		(pts
+			(xy 125.73 62.23) (xy 134.62 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8b15f03-1ce3-4048-8e7d-b69bc35665d2")
+	)
+	(wire
+		(pts
+			(xy 118.11 36.83) (xy 113.03 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb0e5040-c6e3-4dc9-91a9-66a134eb0068")
+	)
+	(global_label "PWM_L"
 		(shape input)
-		(at 12.7 10.16 270)
+		(at 34.29 92.71 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "24c102e7-4506-47d3-939d-7a0d0096914d")
+		(uuid "1560aa72-f255-4d52-bdd0-158d7109c5aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.1363 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "D12"
+	(global_label "D12"
 		(shape input)
-		(at 15.24 10.16 270)
+		(at 60.96 27.94 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "41aa3924-a643-4db3-a179-ab2c17261255")
-	)
-	(hierarchical_label "D9"
-		(shape input)
-		(at 17.78 12.192 270)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "1ed81046-27d3-49e7-9b5a-9c760e79a750")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 34.6142 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
 			)
-			(justify right)
 		)
-		(uuid "8dd92cc5-495c-4353-aaf7-b1d403efba0a")
 	)
-	(hierarchical_label "12V"
+	(global_label "INB_L"
 		(shape input)
-		(at 74.93 23.876 90)
+		(at 54.61 27.94 90)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "8f553a04-77ab-46cf-a37d-ff2ec5ebd3af")
-	)
-	(hierarchical_label "outb"
-		(shape input)
-		(at 119.38 63.246 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "22686074-8842-4e46-baf5-704153baf5ba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 19.7538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
 			)
-			(justify left)
 		)
-		(uuid "c19b5ee6-1dda-438f-ae36-f8f1e25140de")
 	)
-	(hierarchical_label "outa"
+	(global_label "INA_L"
 		(shape input)
-		(at 119.38 51.816 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d39fe1e2-7fb7-40fa-ad21-43d1ced6e590")
-	)
-	(hierarchical_label "A4_2"
-		(shape input)
-		(at 35.56 63.246 180)
+		(at 34.29 87.63 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f63f4a39-5840-41bc-8d92-33426a29f07a")
+		(uuid "243f1e86-61cb-4b97-bde7-006b6568a88b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.2852 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INB_L"
+		(shape input)
+		(at 31.75 41.91 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "26068080-7159-4980-ac3f-9c6b25eb9a95")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.75 33.7238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INB_L"
+		(shape input)
+		(at 34.29 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d9e9c04-4026-4036-84ff-b42d10241ba9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.1038 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUTB_L"
+		(shape input)
+		(at 39.37 105.41 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f1e1568-7f3d-4140-a4dd-7db186873da8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.4905 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUTB_L"
+		(shape input)
+		(at 135.89 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "339a1e60-b0f3-47c5-b52a-3b822820306d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.7695 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS_DIS_L"
+		(shape input)
+		(at 85.09 82.55 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3680d42a-d817-41a3-afda-4a393f953808")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.09 94.0623 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape input)
+		(at 78.74 46.99 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "383ee0c1-728f-400e-8fc0-ee15877a4d43")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 78.74 40.1343 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INA_L"
+		(shape input)
+		(at 48.26 27.94 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40b2a1bc-2641-4b24-a60b-01b75a8be1f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.26 19.9352 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM_L"
+		(shape input)
+		(at 60.96 27.94 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "469e6514-3c4a-4f18-9282-00f6e97f7665")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 18.7863 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 39.37 107.95 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d1792d9-954f-4649-9c81-9e7fdc1e009e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.5143 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 132.08 40.64 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "51a2840d-0253-4bef-a830-fdb0b06b58a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 47.4957 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INA_L"
+		(shape input)
+		(at 29.21 41.91 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f7a9904-cc50-45ee-a991-4a4a709a75ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.21 33.9052 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+12V"
+		(shape input)
+		(at 91.44 30.48 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7fe2779a-e079-435a-957c-755549d25298")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 22.4148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM_L"
+		(shape input)
+		(at 34.29 41.91 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "885746fc-6638-43f4-8bcc-f29a9c7d9d99")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.29 32.7563 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS_L"
+		(shape input)
+		(at 52.07 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8a80ee2d-4584-40d2-b536-62ded561e9b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.6096 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 72.39 35.56 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b25d864-b51a-4a0d-a3e9-c286d6e32c37")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.39 42.4157 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+12V"
+		(shape input)
+		(at 143.51 27.94 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a72d7d92-58fa-45bb-bd5b-60deab982976")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.51 19.8748 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D10"
+		(shape input)
+		(at 54.61 27.94 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8b74e2a-73dd-46a8-ba32-2bfb554b0da4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 34.6142 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+12V"
+		(shape input)
+		(at 39.37 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a9024ebe-f731-44d2-8e64-ba20cfb25b7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.3048 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUTA_L"
+		(shape input)
+		(at 135.89 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac4d02cf-d35a-48d5-beee-0f97a3eea99b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145.5881 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "OUTA_L"
+		(shape input)
+		(at 39.37 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e684231c-420a-4619-807e-070dcb677226")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.6719 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 143.51 38.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ea22ed85-cb88-479c-b6fc-04aef7c9e69f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.51 44.9557 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D11"
+		(shape input)
+		(at 48.26 27.94 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fbd3523c-2f51-49dc-ac88-651540de9e65")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.26 34.6142 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 105.41 101.6 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fbf96d5b-6729-4408-88b3-2cca596c5879")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.41 108.4557 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 64.77 100.33 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffe91d35-2297-4471-961f-4cdc15b1ac65")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.77 107.1857 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VOUT"
+		(shape input)
+		(at 105.41 31.75 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fff7739e-2db9-4d22-8b92-65e39fa4ba2d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.41 24.0476 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
-		(lib_id "VNH5019-altium-import:+5V_BAR")
-		(at 63.5 36.576 180)
+		(lib_id "VNH5019-altium-import:root_0_0.1u_")
+		(at 81.28 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0623dfa1-96a0-427f-811a-695d8c41bb37")
-		(property "Reference" "#PWR?"
-			(at 63.5 36.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 63.5 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 36.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 36.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 63.5 36.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "52ed106d-0d9e-491a-a00f-bfa7932214b6")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_1_1k_")
-		(at 54.61 79.756 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "10ee87d7-97fb-40a1-9b57-e976524b4a43")
-		(property "Reference" "R19"
-			(at 56.39 81.366 0)
+		(uuid "1618a868-8d61-4037-b1b3-be32cc68c17c")
+		(property "Reference" "C6"
+			(at 79.714 31.328 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3936,8 +4169,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "1k"
-			(at 56.388 83.581 0)
+		(property "Value" "0.1u"
+			(at 79.712 33.507 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3945,600 +4178,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NAMEALIAS" "Value(Ω)"
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" ""
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" ""
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "R"
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 54.61 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5c4dbfeb-5458-4142-a6ac-fb4d3618b9c1")
-		)
-		(pin "2"
-			(uuid "97125988-e83a-4982-93c5-8dd0db303a01")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_1k_")
-		(at 52.07 59.436 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1eb44be5-50d9-4a62-9eaf-d3e15df4c3b8")
-		(property "Reference" "R15"
-			(at 50.556 55.934 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "1k"
-			(at 50.554 58.145 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NAMEALIAS" "Value(Ω)"
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" ""
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" ""
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "R"
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 52.07 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c11af73b-2d52-4f38-96af-adc5ab27a575")
-		)
-		(pin "1"
-			(uuid "6ee6127e-c1fd-4f4d-b8b4-115e2bc5a0ea")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_1k_")
-		(at 52.07 51.816 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "373b42b9-079d-4c3c-80c0-3b781e73f9c6")
-		(property "Reference" "R13"
-			(at 50.556 48.314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "1k"
-			(at 50.554 50.525 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NAMEALIAS" "Value(Ω)"
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" ""
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" ""
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "R"
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 52.07 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b4b1643b-1966-41ae-8297-60c2b2a26f6b")
-		)
-		(pin "2"
-			(uuid "e99be366-0c93-43d9-a010-695a20829631")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_VNH5019A-E_")
-		(at 88.9 60.706 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "381d174e-8038-4d0f-b703-fe081ee38859")
-		(property "Reference" "U5"
-			(at 88.084 61.046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "VNH5019A-E"
-			(at 83.123 66.126 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "TIMESTAMP" "1470775320"
-			(at 88.9 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "U"
-			(at 88.9 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "VNH5019A-E"
-			(at 88.9 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 88.9 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "30"
-			(uuid "f4c9a9e6-a3e8-4d5c-b939-1276520381a9")
-		)
-		(pin "11"
-			(uuid "7dfb35ba-0f17-4634-91c3-23fdec5c8a81")
-		)
-		(pin "21"
-			(uuid "3d3cb586-43cb-4fc6-b35f-60b5dcfa9917")
-		)
-		(pin "12"
-			(uuid "9d1edbbe-f9e9-4229-b705-c6e1646d8d7a")
-		)
-		(pin "13"
-			(uuid "6e970503-3eac-4bb7-a435-c5ef9f1f0194")
-		)
-		(pin "23"
-			(uuid "6bda34ae-7c50-452b-b6f0-f45cc4188f11")
-		)
-		(pin "15"
-			(uuid "366674ba-38b1-4968-bf53-0338fb6c8d8a")
-		)
-		(pin "25"
-			(uuid "68684f88-e718-496e-a543-65dc6b053d4b")
-		)
-		(pin "1"
-			(uuid "a03074dc-8471-4eda-9737-dc569a94ff61")
-		)
-		(pin "3"
-			(uuid "da8e8674-6250-466a-a034-d19f1a6676af")
-		)
-		(pin "4"
-			(uuid "744767b1-f0ff-46e9-aba6-5ef094e9843e")
-		)
-		(pin "5"
-			(uuid "97bc6808-d269-43bf-899e-fb6b503da9ef")
-		)
-		(pin "6"
-			(uuid "98b3bf25-6e2d-4658-8fca-798041e1f68a")
-		)
-		(pin "7"
-			(uuid "537d3cba-686e-4658-8a30-e508dd803ca4")
-		)
-		(pin "8"
-			(uuid "0185368d-c79a-4cb1-bb0a-ec5338710e69")
-		)
-		(pin "9"
-			(uuid "859fa408-b145-4ae8-b5f4-731ee48d3bf4")
-		)
-		(pin "10"
-			(uuid "0c236335-fbb1-4642-969c-bcc350c720b5")
-		)
-		(pin "20"
-			(uuid "763c1c68-a6a0-469d-85ba-135c7500db1c")
-		)
-		(pin "16"
-			(uuid "bf950d9f-0d7c-40b2-a6c4-83872565e75b")
-		)
-		(pin "26"
-			(uuid "e8542f35-80ef-49ed-bcf2-bd981fff92fb")
-		)
-		(pin "27"
-			(uuid "819a0f28-e058-49a7-80ba-2ef8dde4a460")
-		)
-		(pin "18"
-			(uuid "371e667f-a662-422b-8e5a-2dcbe1b501ee")
-		)
-		(pin "28"
-			(uuid "166e0246-8ff0-44c6-99b1-96633179a182")
-		)
-		(pin "19"
-			(uuid "522ef19d-5485-4e3d-af13-b1799e393152")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_3_33nF_")
-		(at 48.26 81.026 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3bbce34d-7380-4841-aa4e-fd992adfd386")
-		(property "Reference" "C14"
-			(at 43.547 85.132 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "33nF"
-			(at 43.019 87.672 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 81.026 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,7 +4188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4556,7 +4197,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4565,7 +4206,7 @@
 			)
 		)
 		(property "NAMEALIAS" "Value(F)"
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4575,7 +4216,7 @@
 			)
 		)
 		(property "SUPPLIER PART" ""
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4226,7 @@
 			)
 		)
 		(property "SUPPLIER" ""
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4595,7 +4236,7 @@
 			)
 		)
 		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +4246,7 @@
 			)
 		)
 		(property "SPICEPRE" "C"
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4615,7 +4256,7 @@
 			)
 		)
 		(property "SPICESYMBOLNAME" "C_0805_US"
-			(at 48.26 81.026 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4625,208 +4266,7 @@
 			)
 		)
 		(property "MANUFACTURER PART" ""
-			(at 48.26 81.026 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a69f01fb-df28-4136-906e-9aa4c0dda6c2")
-		)
-		(pin "2"
-			(uuid "fb1581fa-5ec2-4479-86f8-170e1d8ba717")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:GND_POWER_GROUND")
-		(at 48.26 89.916 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "565b76ec-6c2c-4acc-b561-b999deaeb296")
-		(property "Reference" "#PWR?"
-			(at 48.26 89.916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 96.266 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 89.916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 89.916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 48.26 89.916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "638b6290-4011-47d5-81cb-ff84211e91e4")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_1k_")
-		(at 40.64 56.896 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "596143eb-b7df-49f6-91f3-936ebdc8ccf3")
-		(property "Reference" "R14"
-			(at 34.659 55.922 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "1k"
-			(at 39.124 55.605 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NAMEALIAS" "Value(Ω)"
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" ""
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" ""
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "R"
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 40.64 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 40.64 56.896 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4836,49 +4276,50 @@
 			)
 		)
 		(pin "2"
-			(uuid "4b3185a2-7331-4de6-bb3d-3316d31c76ed")
+			(uuid "c7f3bae4-1f13-403a-a31e-831d77c82b89")
 		)
 		(pin "1"
-			(uuid "c5fff990-774e-4c30-97c9-ef52bb5a7d64")
+			(uuid "c7e284cb-68e4-457c-93d3-93d3bc62d3be")
 		)
 		(instances
-			(project ""
+			(project "VNH5019"
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R14")
+					(reference "C6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "VNH5019-altium-import:root_0_10k_")
-		(at 59.69 72.136 0)
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 39.37 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6dd56d79-0b08-4a61-bddb-f89232999f87")
-		(property "Reference" "R17"
-			(at 58.176 68.634 0)
+		(fields_autoplaced yes)
+		(uuid "175b276a-a742-4f26-b584-7abc14bfafae")
+		(property "Reference" "J2"
+			(at 40.64 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 58.174 70.845 0)
+		(property "Value" "Conn_01x03_Socket"
+			(at 40.64 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 72.136 0)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 39.37 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4886,8 +4327,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 59.69 72.136 0)
+		(property "Datasheet" "~"
+			(at 39.37 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4895,8 +4336,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 59.69 72.136 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 39.37 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4904,102 +4345,35 @@
 				(hide yes)
 			)
 		)
-		(property "NAMEALIAS" "Value(Ω)"
-			(at 59.69 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "d0665ed7-f27b-440c-9f8f-47cc8fe5c34c")
 		)
-		(property "SUPPLIER PART" ""
-			(at 59.69 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" ""
-			(at 59.69 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 59.69 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "R"
-			(at 59.69 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 59.69 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 59.69 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
+		(pin "1"
+			(uuid "0062309a-8bd2-4758-9b49-a5ac1cf5635e")
 		)
 		(pin "2"
-			(uuid "084b3090-34df-4f02-bba1-c8dbdd0a5a31")
-		)
-		(pin "1"
-			(uuid "d1d53b1a-08a7-4542-8c7c-a30414f6e1fa")
+			(uuid "85227143-e518-400e-a345-99856c7c2341")
 		)
 		(instances
 			(project ""
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R17")
+					(reference "J2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "VNH5019-altium-import:root_0_1k_")
-		(at 53.34 65.786 0)
+		(lib_id "VNH5019-altium-import:root_1_1k_")
+		(at 71.12 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6ee1480d-d325-438f-acf5-9a33888ab2e4")
+		(uuid "1c4a45ab-a9dd-4f30-b602-d5acd12681bb")
 		(property "Reference" "R16"
-			(at 51.826 62.284 0)
+			(at 72.9 91.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5008,7 +4382,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 51.824 64.495 0)
+			(at 72.898 93.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5016,8 +4390,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 65.786 0)
+		(property "Footprint" "Resistor_SMD:R_0508_1220Metric"
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5026,7 +4400,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5035,7 +4409,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5044,7 +4418,7 @@
 			)
 		)
 		(property "NAMEALIAS" "Value(Ω)"
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5054,7 +4428,7 @@
 			)
 		)
 		(property "SUPPLIER PART" ""
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5064,7 +4438,7 @@
 			)
 		)
 		(property "SUPPLIER" ""
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5074,7 +4448,7 @@
 			)
 		)
 		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5084,7 +4458,7 @@
 			)
 		)
 		(property "SPICEPRE" "R"
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5094,7 +4468,7 @@
 			)
 		)
 		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5104,7 +4478,7 @@
 			)
 		)
 		(property "MANUFACTURER PART" ""
-			(at 53.34 65.786 0)
+			(at 71.12 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5114,13 +4488,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "70011b64-41bb-4b14-90a2-424dfeee8a83")
+			(uuid "3110948c-d589-446e-b3bb-696b3bed37b5")
 		)
 		(pin "2"
-			(uuid "db67070b-8188-409a-a32c-c526803a276f")
+			(uuid "7d34a353-a398-4bd3-8b01-90f5b200ef61")
 		)
 		(instances
-			(project ""
+			(project "VNH5019"
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
 					(reference "R16")
 					(unit 1)
@@ -5129,16 +4503,16 @@
 		)
 	)
 	(symbol
-		(lib_id "VNH5019-altium-import:root_1_4.7k_")
-		(at 58.42 41.656 0)
+		(lib_id "VNH5019-altium-import:root_1_10k_")
+		(at 55.88 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6f0c5f45-5e26-4604-ac96-568aee3d87df")
+		(uuid "41cc09ca-5242-40ca-a4a2-b0055b4e0ec0")
 		(property "Reference" "R10"
-			(at 60.2 43.266 0)
+			(at 57.66 87.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5146,8 +4520,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "4.7k"
-			(at 60.198 45.481 0)
+		(property "Value" "10k"
+			(at 57.658 90.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5155,8 +4529,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 58.42 41.656 0)
+		(property "Footprint" "Resistor_SMD:R_0508_1220Metric"
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5165,7 +4539,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5174,7 +4548,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5183,7 +4557,7 @@
 			)
 		)
 		(property "NAMEALIAS" "Value(Ω)"
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5193,7 +4567,7 @@
 			)
 		)
 		(property "SUPPLIER PART" ""
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5203,7 +4577,7 @@
 			)
 		)
 		(property "SUPPLIER" ""
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,7 +4587,7 @@
 			)
 		)
 		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5223,7 +4597,7 @@
 			)
 		)
 		(property "SPICEPRE" "R"
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5233,7 +4607,7 @@
 			)
 		)
 		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5243,7 +4617,7 @@
 			)
 		)
 		(property "MANUFACTURER PART" ""
-			(at 58.42 41.656 0)
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5252,14 +4626,14 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "050ac275-b8ee-42bc-9b95-944a65ae700c")
-		)
 		(pin "1"
-			(uuid "a526f00c-011d-472e-b8c1-40644607b043")
+			(uuid "8c158a9e-41bf-4996-861c-e5582281cae8")
+		)
+		(pin "2"
+			(uuid "fc3114fd-2b08-4a44-9a1d-f3f3ba2de672")
 		)
 		(instances
-			(project ""
+			(project "VNH5019"
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
 					(reference "R10")
 					(unit 1)
@@ -5268,16 +4642,16 @@
 		)
 	)
 	(symbol
-		(lib_id "VNH5019-altium-import:root_0_0.1u_")
-		(at 106.68 32.766 0)
+		(lib_id "VNH5019-altium-import:root_0_10k_")
+		(at 76.2 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "761245ae-3382-46f5-906f-f4fc8dc0e922")
-		(property "Reference" "C13"
-			(at 104.509 40.682 0)
+		(uuid "45d52de4-8aff-42f4-8c05-1a0570abdaf5")
+		(property "Reference" "R18"
+			(at 74.686 79.048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5285,8 +4659,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 104.374 38.142 0)
+		(property "Value" "10k"
+			(at 74.684 81.259 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5294,8 +4668,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.68 32.766 0)
+		(property "Footprint" "Resistor_SMD:R_0508_1220Metric"
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5304,7 +4678,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 32.766 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5313,653 +4687,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NAMEALIAS" "Value(F)"
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" ""
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" ""
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "C"
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "C_0805_US"
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 106.68 32.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8aa58b8-a8da-4a70-a598-b36aa371a280")
-		)
-		(pin "2"
-			(uuid "e17cd1d5-db0e-4eb9-93c0-9047f73b3c3f")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_47uF_")
-		(at 105.41 26.416 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a8f6805-0b21-4486-9c2b-375657f38c80")
-		(property "Reference" "C12"
-			(at 103.896 22.057 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "47uF"
-			(at 103.894 24.363 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" "LCSC"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "CapXon"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" "ZV470M035E055R"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "NAMEALIAS" "Capacitance"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" "C65229"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "LCSC ASSEMBLY" "Yes"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SMT TYPE" "Extend"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "C"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "ZV470M035E055R"
-			(at 105.41 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1de77df-7d9e-4362-9f08-b0cb5f248ac0")
-		)
-		(pin "2"
-			(uuid "693d0643-5a95-41ff-b665-ad623edcd38c")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:GND_POWER_GROUND")
-		(at 115.57 30.226 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9409e4e9-45b8-4ecd-84e8-4f33857d33da")
-		(property "Reference" "#PWR?"
-			(at 115.57 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 115.57 36.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "1a662108-d180-47ff-8b5b-6cf12454296d")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_0.1u_")
-		(at 64.77 25.146 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "952cdd55-0364-46d9-b055-ebc746a6414c")
-		(property "Reference" "C11"
-			(at 63.204 20.914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 63.202 23.093 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "NAMEALIAS" "Value(F)"
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" ""
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" ""
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "C"
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "C_0805_US"
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" ""
-			(at 64.77 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f23113bf-47d8-4941-815b-dbd5492ca23b")
-		)
-		(pin "1"
-			(uuid "6a4e6931-d2fb-43b9-a47a-245388550e36")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_HAD-04H-R_")
-		(at 16.51 23.876 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ae60a4f2-87e9-433e-9ec5-111682a6d94f")
-		(property "Reference" "SW2"
-			(at 23.368 25.532 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "HAD-04H-R"
-			(at 23.368 27.716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER" "LCSC"
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "ReliaPro"
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER PART" "HAD-04H-R DIP switch"
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SUPPLIER PART" "C3693"
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICEPRE" "S"
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "SPICESYMBOLNAME" "HAD-04H-R"
-			(at 16.51 23.876 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d036344a-7962-4272-9cdd-ade443b38312")
-		)
-		(pin "3"
-			(uuid "5599a915-e567-4e83-8b7c-dd40fd6b6d69")
-		)
-		(pin "4"
-			(uuid "f6e5c6da-07ec-4268-bca2-8c4270ea8b6b")
-		)
-		(pin "5"
-			(uuid "e5387d86-aad4-4378-9f75-e84afe7a1007")
-		)
-		(pin "6"
-			(uuid "cb55a854-b0e7-4f86-b58a-17f5fa2d93dc")
-		)
-		(pin "7"
-			(uuid "99a95f19-e5a3-48b9-8ec8-eff305ee0ae9")
-		)
-		(pin "8"
-			(uuid "dd7cbbb0-8f1b-4d0e-b9ed-f395a4c09bff")
-		)
-		(pin "1"
-			(uuid "b1fd0eed-2327-4ef0-85a4-3031808d43dc")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_0_1k_")
-		(at 40.64 49.276 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ced4f573-a845-4e94-81d5-d7ca4ce5b3f7")
-		(property "Reference" "R12"
-			(at 39.126 45.774 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "1k"
-			(at 39.124 47.985 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 49.276 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 49.276 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5968,7 +4696,7 @@
 			)
 		)
 		(property "NAMEALIAS" "Value(Ω)"
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5978,7 +4706,7 @@
 			)
 		)
 		(property "SUPPLIER PART" ""
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5988,7 +4716,7 @@
 			)
 		)
 		(property "SUPPLIER" ""
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5998,7 +4726,7 @@
 			)
 		)
 		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6008,7 +4736,7 @@
 			)
 		)
 		(property "SPICEPRE" "R"
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6018,7 +4746,7 @@
 			)
 		)
 		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6028,7 +4756,7 @@
 			)
 		)
 		(property "MANUFACTURER PART" ""
-			(at 40.64 49.276 0)
+			(at 76.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6038,155 +4766,31 @@
 			)
 		)
 		(pin "2"
-			(uuid "c6589757-ab02-4953-a611-241f5337f0ba")
+			(uuid "929605cb-641b-40be-8bf8-a7e6d040406b")
 		)
 		(pin "1"
-			(uuid "7a69b0db-b989-4ea8-ab2a-7da31f1ae41a")
+			(uuid "7b75c1c8-88dd-47bf-aaf2-5205af870eb5")
 		)
 		(instances
-			(project ""
+			(project "VNH5019"
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R12")
+					(reference "R18")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "VNH5019-altium-import:GND_POWER_GROUND")
-		(at 88.9 91.186 0)
+		(lib_id "VNH5019-altium-import:root_0_0.1u_")
+		(at 123.19 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d6bc4521-9caa-4ebc-9a21-612ee9964411")
-		(property "Reference" "#PWR?"
-			(at 88.9 91.186 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 97.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 91.186 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 91.186 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 91.186 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "2bd781a9-ba90-46cd-8064-a2fcc79ecbc4")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:GND_POWER_GROUND")
-		(at 59.69 25.146 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d7c34c89-9341-4c44-bc14-cff1c3267a2d")
-		(property "Reference" "#PWR?"
-			(at 59.69 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 31.496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 59.69 25.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin ""
-			(uuid "d338194b-3306-49c3-a65c-318d6e9e044a")
-		)
-		(instances
-			(project ""
-				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "VNH5019-altium-import:root_1_4.7k_")
-		(at 66.04 41.656 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d9f8edf5-3384-4b2a-b813-2fa9e01e66a7")
-		(property "Reference" "R11"
-			(at 67.82 43.27 0)
+		(uuid "4ff1c140-655e-4d83-9ed8-3b4e4c32ef9c")
+		(property "Reference" "C8"
+			(at 121.019 51.096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,8 +4798,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "4.7k"
-			(at 67.818 45.481 0)
+		(property "Value" "0.1u"
+			(at 120.884 48.556 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6203,8 +4807,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 66.04 41.656 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6213,7 +4817,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 41.656 0)
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6222,7 +4826,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 41.656 0)
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6230,8 +4834,8 @@
 				(hide yes)
 			)
 		)
-		(property "NAMEALIAS" "Value(Ω)"
-			(at 66.04 41.656 0)
+		(property "NAMEALIAS" "Value(F)"
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6241,7 +4845,7 @@
 			)
 		)
 		(property "SUPPLIER PART" ""
-			(at 66.04 41.656 0)
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6251,7 +4855,7 @@
 			)
 		)
 		(property "SUPPLIER" ""
-			(at 66.04 41.656 0)
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6261,7 +4865,7 @@
 			)
 		)
 		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 66.04 41.656 0)
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6270,8 +4874,8 @@
 				(hide yes)
 			)
 		)
-		(property "SPICEPRE" "R"
-			(at 66.04 41.656 0)
+		(property "SPICEPRE" "C"
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6280,8 +4884,8 @@
 				(hide yes)
 			)
 		)
-		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 66.04 41.656 0)
+		(property "SPICESYMBOLNAME" "C_0805_US"
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6291,7 +4895,7 @@
 			)
 		)
 		(property "MANUFACTURER PART" ""
-			(at 66.04 41.656 0)
+			(at 123.19 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6300,16 +4904,16 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "04a0efd1-5a44-4552-a7f7-541c9096303c")
-		)
 		(pin "1"
-			(uuid "4004971f-2f7d-45f3-87a6-d8dee47af3cc")
+			(uuid "70be9b20-811d-4adb-9908-c0e585d91ff3")
+		)
+		(pin "2"
+			(uuid "50055190-227b-43f6-ab68-ec10c2cf11d3")
 		)
 		(instances
-			(project ""
+			(project "VNH5019"
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R11")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -6317,15 +4921,15 @@
 	)
 	(symbol
 		(lib_id "VNH5019-altium-import:root_1_FCD600N60Z_")
-		(at 81.28 26.416 0)
+		(at 97.79 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e15206ed-81c3-4e1f-a0a9-048b4ad5a681")
+		(uuid "68e1e6cc-2eed-4e2a-8f3e-e6eb3fc57233")
 		(property "Reference" "Q2"
-			(at 80.97 20.787 0)
+			(at 96.774 31.242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6334,7 +4938,7 @@
 			)
 		)
 		(property "Value" "FCD600N60Z"
-			(at 80.97 23.093 0)
+			(at 91.694 33.528 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6342,8 +4946,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 81.28 26.416 0)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6352,7 +4956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6361,7 +4965,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6370,7 +4974,7 @@
 			)
 		)
 		(property "SUPPLIER" "LCSC"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6380,7 +4984,7 @@
 			)
 		)
 		(property "SUPPLIER PART" "C352876"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6390,7 +4994,7 @@
 			)
 		)
 		(property "MANUFACTURER" "ON Semicon"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6400,7 +5004,7 @@
 			)
 		)
 		(property "MANUFACTURER PART" "FCD600N60Z"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6410,7 +5014,7 @@
 			)
 		)
 		(property "CONTRIBUTOR" "LCSC"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6420,7 +5024,7 @@
 			)
 		)
 		(property "SMT TYPE" "Extend"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6430,7 +5034,7 @@
 			)
 		)
 		(property "JLCPCB SMD" "Yes"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6440,7 +5044,7 @@
 			)
 		)
 		(property "SPICEPRE" "Q"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6450,7 +5054,7 @@
 			)
 		)
 		(property "SPICESYMBOLNAME" "FCD600N60Z"
-			(at 81.28 26.416 0)
+			(at 97.79 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6460,16 +5064,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "5bfbf385-e8d0-4fe4-a30b-d1581ddbf431")
+			(uuid "32975d62-40f5-497d-a1b3-9d10ecddd527")
 		)
-		(pin "4"
-			(uuid "82d0e1d3-7056-4a7e-bb5b-b0f0d6c8e876")
+		(pin "2"
+			(uuid "e7278174-8624-4655-bd98-fa1ef5af277b")
 		)
 		(pin "1"
-			(uuid "9f1b73cd-c123-490e-ad21-712efec7f557")
+			(uuid "267f7e3d-5452-4f32-b549-9168bd696dc1")
 		)
 		(instances
-			(project ""
+			(project "VNH5019"
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
 					(reference "Q2")
 					(unit 1)
@@ -6478,16 +5082,16 @@
 		)
 	)
 	(symbol
-		(lib_id "VNH5019-altium-import:root_1_10k_")
-		(at 39.37 75.946 0)
+		(lib_id "VNH5019-altium-import:root_3_33nF_")
+		(at 64.77 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f9c01aec-5b1b-4940-a5e5-9a33ac6a8d07")
-		(property "Reference" "R18"
-			(at 41.15 77.556 0)
+		(uuid "919b85d1-18ff-42b3-a863-c1cf4399a07c")
+		(property "Reference" "C5"
+			(at 60.057 95.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6495,8 +5099,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10k"
-			(at 41.148 79.771 0)
+		(property "Value" "33nF"
+			(at 59.529 98.086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6504,8 +5108,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 39.37 75.946 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6514,7 +5118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 75.946 0)
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6523,7 +5127,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 75.946 0)
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6531,8 +5135,8 @@
 				(hide yes)
 			)
 		)
-		(property "NAMEALIAS" "Value(Ω)"
-			(at 39.37 75.946 0)
+		(property "NAMEALIAS" "Value(F)"
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6542,7 +5146,7 @@
 			)
 		)
 		(property "SUPPLIER PART" ""
-			(at 39.37 75.946 0)
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6552,7 +5156,7 @@
 			)
 		)
 		(property "SUPPLIER" ""
-			(at 39.37 75.946 0)
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6562,7 +5166,7 @@
 			)
 		)
 		(property "CONTRIBUTOR" "LCEDA_Lib"
-			(at 39.37 75.946 0)
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6571,8 +5175,8 @@
 				(hide yes)
 			)
 		)
-		(property "SPICEPRE" "R"
-			(at 39.37 75.946 0)
+		(property "SPICEPRE" "C"
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6581,8 +5185,8 @@
 				(hide yes)
 			)
 		)
-		(property "SPICESYMBOLNAME" "R_0805_US"
-			(at 39.37 75.946 0)
+		(property "SPICESYMBOLNAME" "C_0805_US"
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6592,7 +5196,7 @@
 			)
 		)
 		(property "MANUFACTURER PART" ""
-			(at 39.37 75.946 0)
+			(at 64.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6602,15 +5206,981 @@
 			)
 		)
 		(pin "1"
-			(uuid "314cc011-671a-4d23-a173-ec148ec6d325")
+			(uuid "58d8bd7a-043a-4a73-9c2c-88465971d776")
 		)
 		(pin "2"
-			(uuid "e1422534-70ce-4cf8-aa1a-e1ed1dfc4a86")
+			(uuid "1e43fdf5-ad12-4345-b6ba-e7e29bd9ba1f")
+		)
+		(instances
+			(project "VNH5019"
+				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "VNH5019-altium-import:root_0_47uF_")
+		(at 121.92 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96efa283-58cb-495d-84cb-90d5f2c00eb9")
+		(property "Reference" "C7"
+			(at 120.406 32.471 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uF"
+			(at 120.404 34.777 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x5.4"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" "LCSC"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "CapXon"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" "ZV470M035E055R"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Capacitance"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" "C65229"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC ASSEMBLY" "Yes"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SMT TYPE" "Extend"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "C"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "ZV470M035E055R"
+			(at 121.92 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe1468b7-ce12-4e93-a533-e20148c5a17a")
+		)
+		(pin "2"
+			(uuid "91970f68-89e9-4d73-985f-1c8148f104cf")
+		)
+		(instances
+			(project "VNH5019"
+				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 44.45 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9800d309-edd6-4bfb-9406-fc41db4412bb")
+		(property "Reference" "J1"
+			(at 45.72 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 45.72 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 44.45 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 44.45 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "330c7f85-c3ea-45d9-8947-0a512086ae00")
+		)
+		(pin "4"
+			(uuid "61350086-68b7-4e37-b974-8c26577944fe")
+		)
+		(pin "3"
+			(uuid "b66a682a-41b8-4b86-9dc4-77c4d3257f8b")
+		)
+		(pin "1"
+			(uuid "d9f809be-05e7-485f-ad1e-920961d0dce6")
 		)
 		(instances
 			(project ""
 				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
-					(reference "R18")
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "VNH5019-altium-import:root_0_1k_")
+		(at 57.15 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab80a66d-32b4-4031-a5b2-b81c316a3427")
+		(property "Reference" "R11"
+			(at 55.636 56.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 55.634 58.399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0508_1220Metric"
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Value(Ω)"
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" ""
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "LCEDA_Lib"
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "R"
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "R_0805_US"
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" ""
+			(at 57.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "900c8cc9-15e4-42f8-ba3e-81088643213e")
+		)
+		(pin "1"
+			(uuid "94cb2528-2c7a-4cb6-b300-dd030525f1b7")
+		)
+		(instances
+			(project "VNH5019"
+				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "VNH5019-altium-import:root_0_0.1u_")
+		(at 143.51 33.02 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bddefec5-548c-4f91-affb-34d849ba2b93")
+		(property "Reference" "C12"
+			(at 149.979 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 150.114 34.798 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Value(F)"
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" ""
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "LCEDA_Lib"
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "C"
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "C_0805_US"
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" ""
+			(at 143.51 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad4cd2e4-0c58-4f74-a7fb-d2ed6a90912b")
+		)
+		(pin "2"
+			(uuid "941585e3-ae34-4f40-a451-4c83ca45afc7")
+		)
+		(instances
+			(project "VNH5019"
+				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "VNH5019-altium-import:root_0_1k_")
+		(at 69.85 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d826c683-81bc-4a22-961a-193a9724e573")
+		(property "Reference" "R15"
+			(at 68.336 72.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 68.334 74.909 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0508_1220Metric"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Value(Ω)"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" ""
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "LCEDA_Lib"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "R"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "R_0805_US"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" ""
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d28f751-4b95-4636-86bc-73457a73c7a6")
+		)
+		(pin "2"
+			(uuid "c7960bcf-9173-4b2a-981e-ac4c2d96273d")
+		)
+		(instances
+			(project "VNH5019"
+				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "VNH5019-altium-import:root_0_VNH5019A-E_")
+		(at 105.41 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e899aa69-ba20-49f9-9a9d-8fe0ee3b90c7")
+		(property "Reference" "U2"
+			(at 104.594 71.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "VNH5019A-E"
+			(at 99.633 76.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Package_SO:ST_MultiPowerSO-30"
+			(at 105.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "TIMESTAMP" "1470775320"
+			(at 105.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "U"
+			(at 105.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "VNH5019A-E"
+			(at 105.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" ""
+			(at 105.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "30"
+			(uuid "ead12af2-e739-44e8-8e13-982c25e40392")
+		)
+		(pin "11"
+			(uuid "60c63a1d-dcf1-4d83-8be9-423755f6d10e")
+		)
+		(pin "21"
+			(uuid "894f0815-26af-45af-8636-0351877d7d88")
+		)
+		(pin "12"
+			(uuid "06264ede-3bc0-4ae6-9d6b-e382b3a500a6")
+		)
+		(pin "13"
+			(uuid "8d86f5fe-81cf-4947-aaf2-1e14ce183ae3")
+		)
+		(pin "23"
+			(uuid "1a9946bf-327f-4009-a3fa-606e8a24ab75")
+		)
+		(pin "15"
+			(uuid "656ec005-6680-472f-9673-2f5a8855458c")
+		)
+		(pin "25"
+			(uuid "45677e37-8870-44ca-a79f-559bde00af49")
+		)
+		(pin "1"
+			(uuid "20b044c2-ae1e-4ffc-9546-04f06440f0fd")
+		)
+		(pin "3"
+			(uuid "1d84b587-dd4b-4eb0-a85d-4c37a91e76df")
+		)
+		(pin "4"
+			(uuid "f700f867-7566-443a-9987-1a6aa115f356")
+		)
+		(pin "5"
+			(uuid "9eb70039-7bd0-440f-b7fd-876757161300")
+		)
+		(pin "6"
+			(uuid "6bc0326f-3951-41ad-923b-73b04b1c6bd0")
+		)
+		(pin "7"
+			(uuid "3bab32e3-d14a-42e1-8792-6584ce46c504")
+		)
+		(pin "8"
+			(uuid "dae37ec1-57fe-4385-9cbd-e5c66e973d87")
+		)
+		(pin "9"
+			(uuid "be963816-6cca-4b61-b0c4-986d26f76194")
+		)
+		(pin "10"
+			(uuid "e504deee-849b-4180-84d6-6a44908b2495")
+		)
+		(pin "20"
+			(uuid "4cc2cc31-a7b9-4a1f-96f7-b6928fca5aba")
+		)
+		(pin "16"
+			(uuid "08912309-8c4f-4b59-a767-4f79786954b2")
+		)
+		(pin "26"
+			(uuid "ace53cec-a97f-4f99-a5bb-3b0b6aed395f")
+		)
+		(pin "27"
+			(uuid "3a815146-d9d5-46fd-8aee-84eb6b782830")
+		)
+		(pin "18"
+			(uuid "4ec57a73-a1cb-4f07-835d-3b67bb1a0b54")
+		)
+		(pin "28"
+			(uuid "e5f57acf-b675-4c35-9424-a3eb7bdf13bc")
+		)
+		(pin "19"
+			(uuid "d65cf005-9589-47db-b029-ffd2fa098e44")
+		)
+		(instances
+			(project "VNH5019"
+				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "VNH5019-altium-import:root_0_1k_")
+		(at 57.15 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd25e181-82d2-4cdf-8190-a5aa05a65f12")
+		(property "Reference" "R12"
+			(at 51.169 66.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 55.634 66.019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0508_1220Metric"
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "NAMEALIAS" "Value(Ω)"
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART" ""
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER" ""
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "CONTRIBUTOR" "LCEDA_Lib"
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICEPRE" "R"
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SPICESYMBOLNAME" "R_0805_US"
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER PART" ""
+			(at 57.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4d2e3411-3493-4aa7-a14c-3eb9fe6a2290")
+		)
+		(pin "1"
+			(uuid "d8ae274e-8b46-4057-9f09-d9e3c32e613c")
+		)
+		(instances
+			(project "VNH5019"
+				(path "/8a56a7da-a0a5-4318-a251-bfbd036d0ddd"
+					(reference "R12")
 					(unit 1)
 				)
 			)

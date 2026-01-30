@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.7-9.0.7~ubuntu24.04.1"
     },
-    "CreationDate": "2026-01-21T00:26:08+01:00"
+    "CreationDate": "2026-01-30T17:38:25+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -18,17 +18,17 @@
       "Y": 80.05
     },
     "LayerNumber": 2,
-    "BoardThickness": 1.786,
+    "BoardThickness": 1.6194,
     "Finish": "ENIG",
     "ImpedanceControlled": true
   },
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.254,
-      "PadToTrack": 0.254,
-      "TrackToTrack": 0.254,
-      "MinLineWidth": 0.2543,
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "MinLineWidth": 0.254,
       "TrackToRegion": 0.254,
       "RegionToRegion": 0.254
     }
@@ -42,6 +42,16 @@
     {
       "Path": "SILVER-Bottom Layer.gbr",
       "FileFunction": "Copper,L2,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-F_Adhesive.gbr",
+      "FileFunction": "Glue,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-B_Adhesive.gbr",
+      "FileFunction": "Glue,Bot",
       "FilePolarity": "Positive"
     },
     {
@@ -75,8 +85,58 @@
       "FilePolarity": "Negative"
     },
     {
+      "Path": "SILVER-User_Drawings.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-User_Comments.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-User_Eco1.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-User_Eco2.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
       "Path": "SILVER-Edge_Cuts.gbr",
       "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-B_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-User_1.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-User_2.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-User_3.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "SILVER-User_4.gbr",
+      "FileFunction": "Other,User",
       "FilePolarity": "Positive"
     }
   ],

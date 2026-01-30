@@ -141,7 +141,7 @@
         "min_track_width": 0.254,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -504,7 +504,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "/home/g0amer/SuperSilverPCB/grb/",
+      "plot": "production/",
       "pos_files": "/home/g0amer/SuperSilverPCB/grb/",
       "specctra_dsn": "",
       "step": "",

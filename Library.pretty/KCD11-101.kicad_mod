@@ -82,17 +82,6 @@
 		(layer "Dwgs.User")
 		(uuid "5f55d0cd-3f70-464d-b744-6399968f7c06")
 	)
-	(fp_rect
-		(start -6 -2.75)
-		(end 1 2.75)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "F.CrtYd")
-		(uuid "bc0e3ff6-2eae-434b-92f4-24d8016c2dfb")
-	)
 	(fp_text user "O"
 		(at -3.1496 0.762 90)
 		(unlocked yes)
@@ -133,7 +122,7 @@
 	(pad "1" thru_hole rect
 		(at -5 0 90)
 		(size 5 1.5)
-		(drill oval 4 0.5)
+		(drill oval 4 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.5)
@@ -144,7 +133,7 @@
 	(pad "2" thru_hole rect
 		(at 0 0 90)
 		(size 5 1.5)
-		(drill oval 4 0.5)
+		(drill oval 4 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.5)
